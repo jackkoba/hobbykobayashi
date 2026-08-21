@@ -1,0 +1,1292 @@
+```html
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html lang="ja">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>★☆★ HOBBY KOBAYASHI ★☆★</title>
+
+<style type="text/css">
+
+body {
+    margin: 0px;
+    padding: 0px;
+
+    /*
+    ★ 背景画像はここ！
+    images/bg.gif を好きな模様画像に差し替えよう！
+    */
+
+    background-image: url("images/bg.gif");
+    background-repeat: repeat;
+
+    font-family:
+        "ＭＳ Ｐゴシック",
+        "MS PGothic",
+        Osaka,
+        sans-serif;
+
+    font-size: 13px;
+
+    color: #000000;
+}
+
+
+/* リンクは青！訪問済みは紫！ */
+
+a:link {
+    color: #0000FF;
+}
+
+a:visited {
+    color: #800080;
+}
+
+a:hover {
+    color: #FF0000;
+}
+
+
+/* サイト全体 */
+
+#container {
+
+    width: 760px;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: #FFFFFF;
+
+    border-top: 3px ridge #CCCCCC;
+    border-left: 3px ridge #CCCCCC;
+    border-right: 3px ridge #666666;
+    border-bottom: 3px ridge #666666;
+
+}
+
+
+/* ロゴ */
+
+#logo {
+
+    background-color: #000080;
+
+    color: #FFFFFF;
+
+    text-align: center;
+
+    border: 3px outset #9999FF;
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
+
+#logo h1 {
+
+    margin: 0px;
+
+    font-size: 30px;
+
+    font-family:
+        "Arial Black",
+        Impact,
+        sans-serif;
+
+    letter-spacing: 2px;
+
+}
+
+#logo p {
+
+    margin-top: 3px;
+    margin-bottom: 0px;
+
+    font-size: 12px;
+
+}
+
+
+/* メインナビ */
+
+#navigation {
+
+    text-align: center;
+
+    background-color: #CCCCFF;
+
+    border-bottom: 2px solid #000080;
+
+    padding: 5px;
+
+    font-weight: bold;
+
+}
+
+
+/* サイドメニュー */
+
+.menu-title {
+
+    background-color: #000080;
+
+    color: #FFFFFF;
+
+    font-weight: bold;
+
+    padding: 3px;
+
+    border-top: 2px outset #6666CC;
+    border-left: 2px outset #6666CC;
+    border-right: 2px outset #000033;
+    border-bottom: 2px outset #000033;
+
+}
+
+
+.menu-box {
+
+    background-color: #EEEEFF;
+
+    border-left: 1px solid #9999CC;
+    border-right: 1px solid #9999CC;
+    border-bottom: 1px solid #9999CC;
+
+    padding: 5px;
+
+}
+
+
+.menu-box ul {
+
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+    padding-left: 20px;
+
+}
+
+
+.menu-box li {
+
+    margin-bottom: 4px;
+
+}
+
+
+/* メイン見出し */
+
+.heading {
+
+    background-color: #000080;
+
+    color: #FFFFFF;
+
+    font-weight: bold;
+
+    padding: 4px;
+
+    border-top: 2px outset #6666CC;
+    border-left: 2px outset #6666CC;
+    border-right: 2px outset #000033;
+    border-bottom: 2px outset #000033;
+
+}
+
+
+/* 更新履歴 */
+
+.update {
+
+    background-color: #FFFFCC;
+
+    border: 2px inset #CCCC99;
+
+    padding: 5px;
+
+}
+
+
+.update p {
+
+    margin-top: 4px;
+    margin-bottom: 4px;
+
+}
+
+
+/* コンテンツ箱 */
+
+.content-box {
+
+    background-color: #FFFFFF;
+
+    border: 1px solid #999999;
+
+    padding: 6px;
+
+}
+
+
+.content-box h3 {
+
+    margin-top: 0px;
+    margin-bottom: 5px;
+
+    color: #000080;
+
+    font-size: 16px;
+
+}
+
+
+.content-box p {
+
+    margin-top: 4px;
+    margin-bottom: 4px;
+
+}
+
+
+/* NEW! */
+
+.new {
+
+    color: #FF0000;
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+}
+
+
+/* フッター */
+
+#footer {
+
+    text-align: center;
+
+    background-color: #CCCCCC;
+
+    border-top: 2px ridge #FFFFFF;
+
+    padding: 8px;
+
+    font-size: 11px;
+
+}
+
+
+.small {
+
+    font-size: 10px;
+
+}
+
+
+.counter {
+
+    background-color: #000000;
+
+    color: #00FF00;
+
+    font-family: "Courier New", monospace;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    text-align: center;
+
+    border: 3px inset #999999;
+
+    padding: 3px;
+
+}
+
+
+/* 工事中 */
+
+.construction {
+
+    color: #FF0000;
+
+    font-weight: bold;
+
+    text-align: center;
+
+}
+
+
+/* 画像プレースホルダー */
+
+.image-box {
+
+    background-color: #999999;
+
+    color: #FFFFFF;
+
+    border: 2px inset #CCCCCC;
+
+    text-align: center;
+
+    padding-top: 60px;
+
+    height: 180px;
+
+}
+
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- ========================================= -->
+<!--   HOBBY KOBAYASHI                        -->
+<!--   since 2026                             -->
+<!--   見た目は1998年                         -->
+<!-- ========================================= -->
+
+
+<center>
+
+
+<div id="container">
+
+
+<!-- ロゴ -->
+
+<div id="logo">
+
+<h1>★☆ HOBBY KOBAYASHI ☆★</h1>
+
+<p>
+～ ジャック小林の趣味と創作のホームページ ～
+</p>
+
+</div>
+
+
+<!-- 点滅する謎のメッセージ -->
+
+<div style="text-align:center; background-color:#FFFF00; padding:3px;">
+
+<blink>
+
+★☆★ ようこそ！ HOBBY KOBAYASHIへ！！ ★☆★
+
+</blink>
+
+</div>
+
+
+<!-- ナビゲーション -->
+
+<div id="navigation">
+
+<a href="index.html">HOME</a>
+
+　｜　
+
+<a href="profile.html">PROFILE</a>
+
+　｜　
+
+<a href="toy/index.html">TOY</a>
+
+　｜　
+
+<a href="game/index.html">GAME</a>
+
+　｜　
+
+<a href="mygame/index.html">MY GAME</a>
+
+　｜　
+
+<a href="original/index.html">ORIGINAL</a>
+
+　｜　
+
+<a href="illustration/index.html">ILLUST</a>
+
+　｜　
+
+<a href="other/index.html">OTHER</a>
+
+</div>
+
+
+<!-- お約束のmarquee -->
+
+<marquee
+behavior="scroll"
+direction="left"
+scrollamount="3"
+bgcolor="#000000"
+style="color:#00FF00; font-family:monospace;">
+
+★★★ 当サイトはリンクフリーです！　相互リンク募集中！！　★★★
+
+</marquee>
+
+
+<!-- メイン -->
+
+<table
+width="100%"
+cellpadding="6"
+cellspacing="0"
+border="0">
+
+<tr>
+
+
+<!-- ========================================= -->
+<!-- サイドバー -->
+<!-- ========================================= -->
+
+<td
+width="170"
+valign="top"
+bgcolor="#EEEEEE">
+
+
+<div class="menu-title">
+
+■ MAIN MENU
+
+</div>
+
+
+<div class="menu-box">
+
+<ul>
+
+<li><a href="profile.html">プロフィール</a></li>
+
+<li><a href="toy/index.html">玩具レビュー</a></li>
+
+<li><a href="game/index.html">ゲームレビュー</a></li>
+
+<li><a href="mygame/index.html">自作ゲーム</a></li>
+
+<li><a href="original/index.html">創作シリーズ</a></li>
+
+<li><a href="illustration/index.html">イラスト集</a></li>
+
+<li><a href="shop.html">商品ページ</a></li>
+
+<li><a href="other/index.html">その他</a></li>
+
+</ul>
+
+</div>
+
+
+<br>
+
+
+<div class="menu-title">
+
+■ SPECIAL
+
+</div>
+
+
+<div class="menu-box">
+
+<ul>
+
+<li><a href="#">フックトイ研究所</a></li>
+
+<li><a href="#">バッタモン博物館</a></li>
+
+<li><a href="#">謎の海外ヒーロー</a></li>
+
+<li><a href="#">MAD素材置き場</a></li>
+
+<li><a href="#">没データ保管庫</a></li>
+
+</ul>
+
+</div>
+
+
+<br>
+
+
+<div class="menu-title">
+
+■ COUNTER
+
+</div>
+
+
+<div class="menu-box">
+
+<p align="center">
+
+あなたは……
+
+</p>
+
+
+<div class="counter">
+
+00123456
+
+</div>
+
+
+<p align="center">
+
+人目の訪問者です！
+
+</p>
+
+<p align="center" class="small">
+
+キリ番GETの方は<br>
+BBSまで！！
+
+</p>
+
+</div>
+
+
+<br>
+
+
+<div class="menu-title">
+
+■ BANNER
+
+</div>
+
+
+<div class="menu-box">
+
+<center>
+
+<!--
+88×31バナーを置く場所
+-->
+
+<img
+src="images/banner.gif"
+width="88"
+height="31"
+alt="HOBBY KOBAYASHI">
+
+<br><br>
+
+<!--
+ここに相互リンク先など
+-->
+
+<img
+src="images/banner2.gif"
+width="88"
+height="31"
+alt="LINK">
+
+</center>
+
+</div>
+
+
+<br>
+
+
+<div class="menu-title">
+
+■ SITE INFO
+
+</div>
+
+
+<div class="menu-box">
+
+<ul>
+
+<li><a href="#about">このサイトについて</a></li>
+
+<li><a href="#history">更新履歴</a></li>
+
+<li><a href="#link">LINK</a></li>
+
+<li><a href="#">管理人へメール</a></li>
+
+</ul>
+
+</div>
+
+
+</td>
+
+
+<!-- ========================================= -->
+<!-- メインコンテンツ -->
+<!-- ========================================= -->
+
+<td
+valign="top"
+bgcolor="#FFFFFF">
+
+
+<div class="heading">
+
+■ WELCOME!!
+
+</div>
+
+
+<p>
+
+<font color="#FF0000">
+
+<b>ようこそ！！</b>
+
+</font>
+
+HOBBY KOBAYASHIへ！！
+
+</p>
+
+
+<table
+width="100%"
+border="1"
+bordercolor="#666666"
+cellpadding="5"
+cellspacing="0">
+
+<tr>
+
+<td
+align="center"
+bgcolor="#FFFFFF">
+
+<!-- メイン画像 -->
+
+<img
+src="images/top.jpg"
+width="540"
+height="220"
+alt="HOBBY KOBAYASHI">
+
+</td>
+
+</tr>
+
+</table>
+
+
+<p>
+
+ここは管理人・<b>ジャック小林</b>が、
+玩具、ゲーム、創作、イラスト、
+その他どうでもいいものを好き勝手に置いている
+個人運営ホームページです。
+
+</p>
+
+
+<p>
+
+気になるコンテンツがあれば、
+左のメニューからどうぞ！
+
+</p>
+
+
+<hr size="1">
+
+
+<!-- 更新履歴 -->
+
+<a name="history"></a>
+
+<div class="heading">
+
+■ WHAT'S NEW
+
+</div>
+
+
+<div class="update">
+
+<p>
+
+<font color="#FF0000">
+
+<b>2026/08/21</b>
+
+</font>
+
+<span class="new">
+
+NEW!!
+
+</span>
+
+ホームページを開設しました！！
+
+</p>
+
+
+<p>
+
+2026/08/XX
+
+玩具レビューを追加しました。
+
+</p>
+
+
+<p>
+
+2026/08/XX
+
+ゲームレビューを追加予定です。
+
+</p>
+
+
+<p>
+
+2026/08/XX
+
+創作シリーズを工事中です。
+
+</p>
+
+
+<p>
+
+2026/08/XX
+
+何かが増えました。
+
+</p>
+
+</div>
+
+
+<br>
+
+
+<!-- コンテンツ一覧 -->
+
+<div class="heading">
+
+■ MAIN CONTENTS
+
+</div>
+
+
+<table
+width="100%"
+border="0"
+cellpadding="4"
+cellspacing="2">
+
+<tr>
+
+
+<td
+width="50%"
+valign="top">
+
+
+<div class="content-box">
+
+<h3>
+
+◆ 玩具レビュー
+
+</h3>
+
+<p>
+
+メタルダー、
+トランスフォーマー、
+マシンロボ、
+エクシードラフト、
+ロボタックなど。
+
+</p>
+
+<p>
+
+さらにフックトイ、
+バッタモンまで！？
+
+</p>
+
+<p>
+
+<a href="toy/index.html">
+
+＞＞ ENTER ＞＞
+
+</a>
+
+</p>
+
+</div>
+
+
+</td>
+
+
+<td
+width="50%"
+valign="top">
+
+
+<div class="content-box">
+
+<h3>
+
+◆ ゲームレビュー
+
+</h3>
+
+<p>
+
+レトロゲームから
+最近のゲームまで。
+
+</p>
+
+<p>
+
+果たして管理人は
+ちゃんとレビューできるのか！？
+
+</p>
+
+<p>
+
+<a href="game/index.html">
+
+＞＞ ENTER ＞＞
+
+</a>
+
+</p>
+
+</div>
+
+
+</td>
+
+</tr>
+
+
+<tr>
+
+
+<td
+valign="top">
+
+
+<div class="content-box">
+
+<h3>
+
+◆ 自作ゲーム
+
+</h3>
+
+<p>
+
+HTMLゲームや
+Scratch作品などを公開！
+
+</p>
+
+<p>
+
+小学生の頃の
+黒歴史もあるかも！？
+
+</p>
+
+<p>
+
+<a href="mygame/index.html">
+
+＞＞ ENTER ＞＞
+
+</a>
+
+</p>
+
+</div>
+
+
+</td>
+
+
+<td
+valign="top">
+
+
+<div class="content-box">
+
+<h3>
+
+◆ 創作シリーズ
+
+</h3>
+
+<p>
+
+時空刑事ジェイバー！
+
+</p>
+
+<p>
+
+おきらくフリート！
+
+</p>
+
+<p>
+
+サイキック・エンジェルズ！
+
+</p>
+
+<p>
+
+その他いろいろ！
+
+</p>
+
+<p>
+
+<a href="original/index.html">
+
+＞＞ ENTER ＞＞
+
+</a>
+
+</p>
+
+</div>
+
+
+</td>
+
+</tr>
+
+
+<tr>
+
+
+<td
+valign="top">
+
+
+<div class="content-box">
+
+<h3>
+
+◆ イラスト集
+
+</h3>
+
+<p>
+
+デジタル絵、
+アナログ絵、
+そして厳選された没！
+
+</p>
+
+<p>
+
+<a href="illustration/index.html">
+
+＞＞ ENTER ＞＞
+
+</a>
+
+</p>
+
+</div>
+
+
+</td>
+
+
+<td
+valign="top">
+
+
+<div class="content-box">
+
+<h3>
+
+◆ その他
+
+</h3>
+
+<p>
+
+海外の謎ヒーロー。
+
+</p>
+
+<p>
+
+MAD素材。
+
+</p>
+
+<p>
+
+コラ画像。
+
+</p>
+
+<p>
+
+管理人も何があるのか
+よく分かっていません。
+
+</p>
+
+<p>
+
+<a href="other/index.html">
+
+＞＞ ENTER ＞＞
+
+</a>
+
+</p>
+
+</div>
+
+
+</td>
+
+</tr>
+
+
+</table>
+
+
+<br>
+
+
+<!-- ABOUT -->
+
+<a name="about"></a>
+
+
+<div class="heading">
+
+■ ABOUT THIS SITE
+
+</div>
+
+
+<p>
+
+当サイトは個人運営の趣味サイトです。
+
+</p>
+
+
+<p>
+
+コンテンツは突然増えたり、
+突然消えたりします。
+
+</p>
+
+
+<center>
+
+<table
+border="2"
+bordercolor="#FF0000"
+cellpadding="5"
+bgcolor="#FFFFCC">
+
+<tr>
+
+<td>
+
+<b>
+
+<font color="#FF0000">
+
+★ 現在、一部コンテンツ工事中！！ ★
+
+</font>
+
+</b>
+
+</td>
+
+</tr>
+
+</table>
+
+</center>
+
+
+<br>
+
+
+<!-- LINK -->
+
+<a name="link"></a>
+
+
+<div class="heading">
+
+■ LINK
+
+</div>
+
+
+<center>
+
+<p>
+
+相互リンク募集中！！
+
+</p>
+
+
+<img
+src="images/banner.gif"
+width="88"
+height="31"
+alt="HOBBY KOBAYASHI">
+
+<p class="small">
+
+バナー直リンクは禁止です。<br>
+お持ち帰りください。
+
+</p>
+
+</center>
+
+
+<hr size="1">
+
+
+<center>
+
+<font color="#FF0000">
+
+<b>
+
+★ 最終更新日：2026年8月21日 ★
+
+</b>
+
+</font>
+
+</center>
+
+
+</td>
+
+</tr>
+
+</table>
+
+
+<!-- フッター -->
+
+<div id="footer">
+
+<p>
+
+<blink>
+
+★ THANK YOU FOR VISITING! ★
+
+</blink>
+
+</p>
+
+
+<p>
+
+このホームページは<br>
+
+Internet Explorer 5.5以上で<br>
+
+正常に表示されると思います。
+
+</p>
+
+
+<p class="small">
+
+推奨画面解像度：800×600以上<br>
+
+文字サイズ：中
+
+</p>
+
+
+<p>
+
+Copyright (C) 2026<br>
+
+<b>HOBBY KOBAYASHI</b><br>
+
+All Rights Reserved.
+
+</p>
+
+
+<p>
+
+<a href="index.html">
+
+[ HOME ]
+
+</a>
+
+</p>
+
+
+</div>
+
+
+</div>
+
+
+</center>
+
+
+</body>
+
+</html>
+```
